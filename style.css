@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+.navlink{
+    display: flex;
+    padding-right: 12px;
+}
+li{
+    list-style: none;
+    margin: 8px;
+    font-size: 18px;
+}
+.menu{
+    display: none;
+
+}
+@media only screen and (max-width:850px) {
+    .navlink{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: gainsboro;
+        justify-content: center;
+        align-items: center;
+        margin-top: -900px;
+        transition: all 0.7s ease;
+    }
+    .menu-add{
+        margin-top: 0px;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
